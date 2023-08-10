@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+/* boas práticas deixar as fontes em cima*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    /*configurando para diferentes browsers*/
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(78, 220, 225));
+    background-image: -moz-linear-gradient(to bottom, rgb(255, 255, 255), rgb(78, 220, 225));
+    background-image: -webkit-linear-gradient(to bottom, rgb(255, 255, 255), rgb(78, 220, 225));
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    color: #929090;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+#display {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: end;
+    padding: 1rem;
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+
+.buttons {
+    padding: 1rem;
+    background-color: gray;
+    margin-top: -20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.fourth {
+    margin-bottom: 0;
+}
+
+.button {
+    width: 35px;
+    height: 35px;
+    border-radius: 35%;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+    border: none;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    /*muda formato do cursor*/
+    cursor: pointer;
+}
+
+/*mudar a cor do botão quando passa em cima*/
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: .2;
+}
+
+.button-clear {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 300px;
+    border-radius: 4px;
+    width: 80px;
+}
